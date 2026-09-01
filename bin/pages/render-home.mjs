@@ -207,7 +207,6 @@ ${jsonLd}
         <div class="wrap">
           <a class="brand" href="${home}"><span class="logo">D</span>${e(ui.siteName)}</a>
           <nav>
-${nav}
 ${langMenu(locale, locales, ui, (l) => LOCALES[l].home)}
           </nav>
         </div>

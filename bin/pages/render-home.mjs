@@ -201,11 +201,7 @@ ${jsonLd}
   </head>
 
   <body>
-    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
-      <symbol id="gh-mark" viewBox="0 0 16 16">
-        <path d="${GH_MARK}" />
-      </symbol>
-    </svg>
+  
     <section id="landing-hero">
       <header class="bar">
         <div class="wrap">

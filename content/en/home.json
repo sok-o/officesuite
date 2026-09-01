@@ -1,3 +1,4 @@
+```json
 {
   "title": "Open DOCX, XLSX & PPTX in Your Browser — Free Document Viewer & Editor",
   "description": "Open and view Word (DOCX), Excel (XLSX), PowerPoint (PPTX) and CSV files directly in your browser — no Office installed, no upload, no sign-up. Edit and save them too. Free, privacy-first, works offline. Powered by OnlyOffice.",
@@ -19,7 +20,12 @@
     "note": "Close the tab by accident and nothing is lost: your edits are saved into this browser as you work. Saved copies stay for 7 days and are then deleted automatically — or delete them yourself at any time.",
     "all": "Saved documents"
   },
-  "trust": ["0 bytes uploaded", "no account", "works offline", ".docx .xlsx .pptx .csv"],
+  "trust": [
+    "0 bytes uploaded",
+    "no account",
+    "works offline",
+    ".docx .xlsx .pptx .csv"
+  ],
   "docwin": {
     "file": "report.docx",
     "badge": "saved locally ✓",
@@ -28,16 +34,7 @@
     "noteBody": "0 bytes uploaded — check the network tab.",
     "net": "network · 0 requests · 0 bytes out"
   },
-  "nav": [
-    {
-      "href": "/offline-document-editor",
-      "label": "Offline"
-    },
-    {
-      "href": "/no-signup-document-editor",
-      "label": "No sign-up"
-    }
-  ],
+  "nav": [],
   "sections": {
     "formats": {
       "eyebrow": "Open a file",
@@ -169,84 +166,6 @@
       ]
     }
   },
-  "eco": {
-    "label": "Part of the ran ecosystem · all open source",
-    "here": {
-      "name": "edit.chaxus.com",
-      "role": "Office editor"
-    },
-    "other": {
-      "href": "https://ran.chaxus.com",
-      "name": "ran.chaxus.com",
-      "role": "UI components"
-    }
-  },
-  "foot": {
-    "copy": "© 2026 Document Editor · runs on your device",
-    "links": [
-      {
-        "href": "/help",
-        "label": "Help"
-      },
-      {
-        "href": "/changelog",
-        "label": "Changelog"
-      },
-      {
-        "href": "/embed-document-editor",
-        "label": "Embed API"
-      },
-      {
-        "href": "/webmcp-document-editor",
-        "label": "WebMCP"
-      },
-      {
-        "href": "/private-document-editor",
-        "label": "Privacy"
-      },
-      {
-        "href": "/offline-document-editor",
-        "label": "Offline editor"
-      },
-      {
-        "href": "/no-signup-document-editor",
-        "label": "No sign-up"
-      },
-      {
-        "href": "/open/docx",
-        "label": "Open DOCX"
-      },
-      {
-        "href": "/open/odt",
-        "label": "ODT"
-      },
-      {
-        "href": "/open/ods",
-        "label": "ODS"
-      },
-      {
-        "href": "/open/odp",
-        "label": "ODP"
-      },
-      {
-        "href": "/convert/docx-to-pdf",
-        "label": "DOCX → PDF"
-      },
-      {
-        "href": "/convert/xlsx-to-csv",
-        "label": "XLSX → CSV"
-      },
-      {
-        "href": "/onlyoffice-online-free",
-        "label": "ONLYOFFICE online"
-      },
-      {
-        "href": "https://github.com/ranuts/document",
-        "label": "GitHub"
-      }
-    ],
-    "license": "AGPL-3.0"
-  },
   "featureList": [
     "Open and view DOCX, XLSX, PPTX and CSV without Microsoft Office",
     "Edit DOCX, XLSX, PPTX and CSV files",
@@ -258,7 +177,8 @@
     "Free and open source (AGPL-3.0)"
   ],
   "ecosystem": {
-    "name": "ran ecosystem",
-    "url": "https://ran.chaxus.com"
+    "name": "",
+    "url": ""
   }
 }
+```

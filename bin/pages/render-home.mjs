@@ -5,10 +5,10 @@
  * the decoration around them is layout. content/<locale>/home.json holds the
  * strings; this holds the structure.
  */
-import { ORIGIN, REPO } from './constants.mjs';
+import { ORIGIN } from './constants.mjs';
 import { ID, appEntity, siteEntities, sourceEntity } from './entities.mjs';
 import { DEFAULT_LOCALE, LOCALES } from './locales.mjs';
-import { GH_MARK, langMenu } from './chrome.mjs';
+import { langMenu } from './chrome.mjs';
 import { escapeHtml } from './markdown.mjs';
 import { UI } from './ui.mjs';
 
@@ -120,8 +120,6 @@ export function renderHome({ locale, data, locales }) {
             </details>`,
     )
     .join('\n');
-  const nav = data.nav.map((l) => `            <a class="navlink" href="${e(l.href)}">${e(l.label)}</a>`).join('\n');
-  const footLinks = data.foot.links.map((l) => `          <a href="${e(l.href)}">${e(l.label)}</a>`).join('\n');
   const trust = data.trust.map((t) => `<span>${e(t)}</span>`).join('');
 
   return `<!doctype html>
@@ -214,9 +212,6 @@ ${jsonLd}
           <a class="brand" href="${home}"><span class="logo">D</span>${e(ui.siteName)}</a>
           <nav>
 ${nav}
-            <a class="navlink gh" href="${REPO}" rel="noopener" target="_blank">
-              <svg class="ghmark" aria-hidden="true"><use href="#gh-mark"></use></svg> GitHub
-            </a>
 ${langMenu(locale, locales, ui, (l) => LOCALES[l].home)}
           </nav>
         </div>
@@ -321,32 +316,8 @@ ${faq}
         </div>
       </div>
 
-      <div class="eco">
-        <div class="wrap">
-          <span class="eco-label">
-            <svg class="gitmark" aria-hidden="true"><use href="#gh-mark"></use></svg>
-            ${e(data.eco.label)}
-          </span>
-          <nav>
-            <span class="here"><b>${e(data.eco.here.name)}</b> <small>${e(data.eco.here.role)}</small></span>
-            <a href="${e(data.eco.other.href)}" rel="noopener" target="_blank">
-              <b>${e(data.eco.other.name)}</b> <small>${e(data.eco.other.role)}</small>
-            </a>
-          </nav>
-        </div>
-      </div>
-
       </main>
 
-      <footer class="foot wrap">
-        <span>${e(data.foot.copy)}</span>
-        <nav>
-${footLinks}
-        </nav>
-        <r-theme-switch class="theme-switch" label="${e(ui.themeLabel)}"></r-theme-switch>
-        <span class="lic">${e(data.foot.license)}</span>
-        <p class="tm">${e(ui.trademark)}</p>
-      </footer>
     </section>
 
     <!-- Registers the service worker (so the landing works offline / installs as

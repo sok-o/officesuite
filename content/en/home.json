@@ -165,6 +165,23 @@
       ]
     }
   },
+  "eco": {
+    "label": "",
+    "here": {
+      "name": "",
+      "role": ""
+    },
+    "other": {
+      "href": "",
+      "name": "",
+      "role": ""
+    }
+  },
+  "foot": {
+    "copy": "",
+    "links": [],
+    "license": ""
+  },
   "featureList": [
     "Open and view DOCX, XLSX, PPTX and CSV without Microsoft Office",
     "Edit DOCX, XLSX, PPTX and CSV files",
